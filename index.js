@@ -12,19 +12,22 @@
 
 const calculator = {
     plus:function (a, b){
-        alert(a + b);
+        return a + b;
     },
     minus:function (a, b){
-        alert(a - b);
+        return a - b;
+    },
+    times:function (a, b) {
+        return a * b;
     },
     divide:function (a, b){
-        alert(a / b);
+        return a / b;
     },
     powerOf:function (a, b){
-        alert(a ** b);
+        return a ** b;
     },
 
 };
 
 
-console.log(calculator.plus(2, 3));
+const plusResult = calculator.plus(2, 3);
