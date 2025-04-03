@@ -41,21 +41,25 @@
 //     console.log("Thank you for writing your age.")
 // }
 
-const age = parseInt(prompt("How old are you?"));
 
-if (isNaN(age) || age < 0) {
-  console.log("Pleas write a real positive number");
-} else if (age < 18) {
-  console.log("you are too young.");
-} else if (age >= 18 && age <= 50) {
-  console.log("you can drink");
-} else if (age > 50 && age <= 80) {
-  console.log("You should exercise");
-} else if (age === 100) {
-  console.log("wow you are wise");
-} else if (age > 80) {
-  console.log("You can do whatever you want.");
-}
+// const age = parseInt(prompt("How old are you?"));
+
+// if (isNaN(age) || age < 0) {
+//   console.log("Pleas write a real positive number");
+// } else if (age < 18) {
+//   console.log("you are too young.");
+// } else if (age >= 18 && age <= 50) {
+//   console.log("you can drink");
+// } else if (age > 50 && age <= 80) {
+//   console.log("You should exercise");
+// } else if (age === 100) {
+//   console.log("wow you are wise");
+// } else if (age > 80) {
+//   console.log("You can do whatever you want.");
+// }
+
+
+
 // true || true === true
 // false || true === true
 // true || false === true
@@ -65,3 +69,17 @@ if (isNaN(age) || age < 0) {
 // false && true === false
 // true && false === false
 // false && false ===false
+
+// const title = document.getElementById("something");
+// console.log(ti  tle.id)
+// title.innerText = "Got you!";
+// console.log(title.className);
+
+// const hellos = document.getElementsByClassName("hello");
+// console.log(hellos);
+
+const title = document.querySelector("div.hello:first-child h1");
+console.dir(title); 
+title.innerText = "Hello";
+
+title.style.color ="blue"
